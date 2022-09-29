@@ -1,0 +1,18 @@
+Registro: Memoria de alta velocidad y poca capacidad, Integrada con el procesador
+		
+		Registros de memoria: Se usan para guardar exclusivamente direcciones de memoria. Eran muy usados en la arquitectura Harvard, ya que muchas veces las direcciones tenian un tamaño de palabra sitinto que los datos.
+			
+		Registros constantes: Tienen valores creados por el hardware de solo lectura, E.g. en MIPS el registro cero siempre vale 0.
+		
+		Registros de proposito especifico: Guardan información especifica del estado del sistema, como el puntero de pila o el registro de estado.
+	
+Cache: Se trata de una memoria que está instalada dentro de la propia CPU, es costosa de fabricar por su alta velocidad.
+	   Se encarga de almacenar las instrucciones que inminentement van a ser procesadaspor la CPU, para que este pueda acceder a ellas de la forma más rapida posible.
+		
+		L1: Es la mas rapida, se encuentra mas cerca de los nucleos, almacena los datos que inmediatamente van a ser usador por la CPU, y es por ello que las velocidades estan en torno a los 1150 GB/s y la latencia en tan solo 0,9 ns. Se divide en L1 de datos y L1 de instrucciones.
+		
+		L2: Tienes velocidad de 470 GB/s y 8,2 ns de latencia, el tamaño de almacenamiento suele variar entre los 256 KB y 18 MB, almacena intrucciones y datos que pronto seran utilizados por la CPU y en este caso noe sta dividida en instrucciones y datos. Pero si hay una cache L2 por nucleo.
+		
+		L3: Tiene un espacio dedicado para ella en el chip del cpu, ser la de mayor tamaño y mas lenta, 200 GB/s y 11ns de latencia. Tiene al menos 4MB de cache L3 y puede verse en unidades de hasta 64 MB, La L3 se reparte normalmente en unos 2MB por cada nucleo, hay un bus de datos para comunicar entre cada particion de la memoria.
+		
+Memoria principal (RAM): Cumple la funcion de almacenar los programas en ejecución. Su acceso es aleatorio y su retencion es volátil. La carga transifere una palabra de memoria principal a la CPU, Es de velocidad media en comparación a la de primer nivel.
